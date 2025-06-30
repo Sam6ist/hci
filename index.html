@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qo‘l ishoralarini aniqlash (JSON)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    canvas, video {
+      display: block;
+      margin: 10px auto;
+      border: 2px solid #2c3e50;
+      border-radius: 8px;
+    }
+    #json-output {
+      background: #fff;
+      padding: 10px;
+      border-radius: 6px;
+      width: 90%;
+      max-width: 600px;
+      margin: 20px auto;
+      font-family: monospace;
+      text-align: left;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>🤖 Qo‘l ishoralarini aniqlash</h1>
+  <video id="video" width="640" height="480" autoplay muted></video>
+  <canvas id="canvas" width="640" height="480"></canvas>
+  <div id="json-output">Natijalar JSON formatida bu yerda chiqadi...</div>
+
+  <!-- MediaPipe Hands -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.min.js"></script>
+  <s
